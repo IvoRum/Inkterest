@@ -1,0 +1,7 @@
+
+class Artist{
+    private name;
+    
+
+    
+}
