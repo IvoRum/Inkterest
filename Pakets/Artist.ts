@@ -1,7 +1,7 @@
 
 class Artist{
-    private name;
+    private name:String;
     
 
-    
+
 }
