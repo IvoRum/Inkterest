@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
 h2{
     background: #fff url(https://images.unsplash.com/photo-1610311911648-24d33745eb39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) fixed;
     font-family: "Brush Script MT";
@@ -47,6 +55,23 @@ head{
 
 p{
     text-indent:20px;
+}
+
+.shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cards__grid {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 -20px;
+}
+
+.card {
+  flex: 0 0 calc(100% / 3);
+  padding: 0 20px;
 }
 
 footer{
