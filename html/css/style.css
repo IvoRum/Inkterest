@@ -9,7 +9,7 @@
 }
 
 h2{
-    background: #fff url(https://images.unsplash.com/photo-1610311911648-24d33745eb39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) fixed;
+    background: #fff;
     font-family: "Brush Script MT";
     font-weight: 500;
     text-align: center;
@@ -20,7 +20,6 @@ h1{
     margin: 0;
     padding: 0;
     font-family: 'Satisfy', cursive;
-    background: linear-gradient(#2B5FE9, #302D2D);
     color:#fff;
 }
 
@@ -57,10 +56,93 @@ p{
     text-indent:20px;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .shell {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header {
+  background: linear-gradient(#2B5FE9, #302D2D);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.close-btn:before, .close-btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 15px;
+  height: 2px;
+  transform: rotate(45deg);
+}
+
+.close-btn:after {
+  transform: rotate(-45deg);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter:  blur(3px);
+  z-index: 12;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  padding: 0 30px;
+  transition: opacity .3s;
+}
+
+.popup p, .popup h2 {
+  color: #000;
+}
+
+.popup .popup__inner {
+  max-width: 880px;
+  margin: auto;
+  background-color: #fff;
+  width: 100%;
+}
+
+.popup .popup__entry {
+  display: flex;
+}
+
+.popup .popup__image {
+  flex: 0 0 50%;
+  position: relative;
+  padding-bottom: 50%;
+}
+
+.popup .popup__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup .popup__content {
+  flex: 0 0 50%;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .cards__grid {
@@ -72,6 +154,23 @@ p{
 .card {
   flex: 0 0 calc(100% / 3);
   padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.card .card__image a {
+  display: block;
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.card .card__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 footer{
