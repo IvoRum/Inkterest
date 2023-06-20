@@ -2,6 +2,7 @@ package com.dxc.ghp.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 import java.math.BigInteger;
 import java.util.Map;
@@ -28,10 +29,8 @@ final class FactorialTest {
 
 	@ParameterizedTest
 	@MethodSource("testData")
-	void testIterativeNormal(Map<Integer, BigInteger> fTestData) {
-		checkNormalFactorial(fTestData, (int n) -> {
-			return Factorial.iterative(n);
-		});
+	void testIterativeNormal(int n, BigInteger expectedFactorial) {
+		Assertions.assertEquals(expectedFactorial, Factorial.iterative(n));
 	}
 
 	@Test
@@ -47,15 +46,13 @@ final class FactorialTest {
 
 	@ParameterizedTest
 	@MethodSource("testData")
-	void testRecursionNormal(Map<Integer, BigInteger> fTestData) {
-		checkNormalFactorial(fTestData, (int n) -> {
-			return Factorial.recursion(n);
-		});
+	void testRecursionNormal(int n, BigInteger expectedFactorial) {
+		Assertions.assertEquals(expectedFactorial, Factorial.recursion(n));
 	}
 
-	private static Stream<Map<Integer, BigInteger>> testData() {
-		return Stream.of(Map.of(1, BigInteger.ONE), Map.of(2, BigInteger.TWO),
-				Map.of(20, BigInteger.valueOf(2_432_902_008_176_640_000L)));
+	private static Stream<Arguments> testData() {
+		return Stream.of(arguments(1, BigInteger.ONE), arguments(2, BigInteger.TWO),
+				arguments(20, BigInteger.valueOf(2_432_902_008_176_640_000L)));
 	}
 
 	@Test
@@ -69,14 +66,13 @@ final class FactorialTest {
 		checkWillInvalidArgumentThrows(Factorial::recursion, n);
 	}
 
-	private void checkNormalFactorial(Map<Integer, BigInteger> fTestData, IntFunction<BigInteger> function) {
+	private void checkNormalFactorial(IntFunction<BigInteger> function) {
 
 		// factorialTestData.entrySet().forEach(entry->Assertions.assertEquals(entry.getValue(),
 		// function.apply(entry.getKey())));
-		// factorialTestData
-		// .forEach((n, expectedFactorial) -> Assertions.assertEquals(expectedFactorial,
-		// function.apply(n)));
-		fTestData.forEach((n, expectedFactorial) -> Assertions.assertEquals(expectedFactorial, function.apply(n)));
+		factorialTestData
+				.forEach((n, expectedFactorial) -> Assertions.assertEquals(expectedFactorial, function.apply(n)));
+
 	}
 
 	private void checkWhitZeroWillReturnOne(IntFunction<BigInteger> function) {
