@@ -5,9 +5,17 @@
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.speedment.jpastreamer/fieldgenerator-standard/3.0.4/fcaee75a2abfd14d6db710b47006636f132eeae3/fieldgenerator-standard-3.0.4.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.quarkus/quarkus-panache-common/3.6.6/bafb9c8fc5407aa154e23839ecfe90bb23b22a29/quarkus-panache-common-3.6.6.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.speedment.jpastreamer/field/3.0.4/b6c7f8f6c488a83f3ee4c4e5dec3a9bc7f6d373/field-3.0.4.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.persistence/jakarta.persistence-api/3.1.0/66901fa1c373c6aff65c13791cc11da72060a8d6/jakarta.persistence-api-3.1.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.speedment.common/codegen/3.2.10/8aca957ebb7b19481c9ab2dd8abbd88113e47123/codegen-3.2.10.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service-annotations/1.0.1/ac86dacc0eb9285ea9d42eee6aad8629ca3a7432/auto-service-annotations-1.0.1.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.quarkus/quarkus-arc/3.6.6/6520f00ff3302d6625f5cd673a5c9fbfe195f31c/quarkus-arc-3.6.6.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.quarkus/quarkus-core/3.6.6/f18cacf04d79f9054f6a93bd72e7d99549094126/quarkus-core-3.6.6.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.speedment.common/invariant/3.2.10/e6bcfb466a413a71bf59efb32e0f13d0b20feb8f/invariant-3.2.10.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.speedment.runtime/runtime-compute/3.2.10/ba01a1d3d755e7d6747f56ae091932a7a0f4f753/runtime-compute-3.2.10.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.speedment.common/function/3.2.10/f8016380e19a68e94f10101513df14560ddacb0/function-3.2.10.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.quarkus.arc/arc/3.6.6/38305a433ae89b777bdf85441f06eaa0a79c72fa/arc-3.6.6.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.enterprise/jakarta.enterprise.cdi-api/4.0.1/2012f388c6de83e29101cbf82c3ed2bd37931c64/jakarta.enterprise.cdi-api-4.0.1.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/2.1.1/48b9bda22b091b1f48b13af03fe36db3be6e1ae3/jakarta.annotation-api-2.1.1.jar" />
@@ -51,5 +59,13 @@
         <module name="ink-persistence-poc.ink-persistence-poc.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ink-persistence-poc.ink-persistence-poc.integrationTest~1" target="17" />
+      <module name="ink-persistence-poc.ink-persistence-poc.main~1" target="17" />
+      <module name="ink-persistence-poc.ink-persistence-poc.native-test~1" target="17" />
+      <module name="ink-persistence-poc.ink-persistence-poc.quarkus-generated-sources~1" target="17" />
+      <module name="ink-persistence-poc.ink-persistence-poc.quarkus-test-generated-sources~1" target="17" />
+      <module name="ink-persistence-poc.ink-persistence-poc.test~1" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

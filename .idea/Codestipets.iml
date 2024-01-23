@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="FindBugs-IDEA">
-    <analysisEffort>min</analysisEffort>
-    <minRank>1</minRank>
-    <minPriority>High</minPriority>
-    <suppressWarningsClassName />
-  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
@@ -13,6 +7,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="56048636-abb9-4b6b-9446-2e6e3760516e" />
+    <option name="uniqueId" value="deb30bf7-8aed-4e56-8fe8-643225ee47fd" />
   </component>
 </module>

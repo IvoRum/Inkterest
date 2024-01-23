@@ -18,10 +18,13 @@ dependencies {
     implementation 'io.quarkus:quarkus-resteasy-reactive'
     implementation 'io.quarkus:quarkus-hibernate-orm-panache'
     implementation 'io.quarkus:quarkus-jdbc-postgresql'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.1'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'io.quarkus:quarkus-hibernate-orm'
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
+    implementation 'com.speedment.jpastreamer:jpastreamer-core:3.0.4'
+    annotationProcessor 'com.speedment.jpastreamer:fieldgenerator-standard:3.0.4'
 }
 
 group 'com.ink'
@@ -42,4 +45,13 @@ compileJava {
 
 compileTestJava {
     options.encoding = 'UTF-8'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+            srcDir 'build/generated/sources/annotationProcessor'
+        }
+    }
 }
