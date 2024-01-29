@@ -3,20 +3,6 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 V
 &src/main/java/com/ink/vo/ArtistVO.java,1\b\1b9f1698cd5055dbd3d6efd57f8229fa7bcc68cb
-R
-"src/main/java/ink/bo/ArtistBO.java,5\4\5414bd28d72508809e7464253f8ec55812e2d087
-T
-$src/main/java/ink/bo/LocationBO.java,e\d\ed60f0af41c5f00055f20b5b76d60809d9c17866
-P
- src/main/java/ink/bo/PostBO.java,e\4\e49ae1ea3a1630534d9f2cbe12244e383e75b91e
-P
- src/main/java/ink/bo/UserBO.java,9\f\9f112f02faaa46b30a573fc2ef9094e1a74e34b8
-R
-"src/main/java/ink/bo/StudioBO.java,8\d\8d3f9fb23d34d2ebdd6f86c629a4b480006bcad3
-T
-$src/main/java/ink/vo/LocationVO.java,0\b\0b3d950ae462f5062508dd122da5b1b760ec778c
-P
- src/main/java/ink/vo/PostVO.java,f\a\faab29471bfa3c0cdbff011cf58d8817a653200e
 V
 &src/main/java/com/ink/bo/ArtistBO.java,b\5\b531c819061e4941d5bcb776d665e17dd9c5e1a6
 X
