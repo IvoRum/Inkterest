@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a9c1e0dc483c9f68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Redis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -171,10 +183,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eede879f2d3a2963",
+  "active": "a9c1e0dc483c9f68",
   "lastOpenFiles": [
-    "Graph ql.md",
+    "Mongo.md",
     "Redis.md",
+    "Graph ql.md",
     "API gatway.md",
     "Images/Pasted image 20240204221254.png",
     "Images/Pasted image 20240204222703.png",
