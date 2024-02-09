@@ -21,3 +21,11 @@ T
 $src/main/java/com/ink/vo/UserVO.java,5\4\54ad28eab832316e6c151a6f3ec247fd57ef7ffb
 Q
 !src/main/java/com/ink/Status.java,7\3\731e2d357223dd71c842bd21bd2eea555cdd3dda
+Y
+)src/main/java/com/ink/auth/UserLogIn.java,9\4\947c6e801e209641eb51295c4a125d3f29c1b8a5
+\
+,src/main/java/com/ink/auth/UserRegister.java,1\5\15386fb0ae70ee95e05df7ad008ea98dc91db3d4
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
