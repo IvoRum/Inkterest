@@ -1,5 +1,6 @@
-package com.ink.auth;
+package com.ink.controller;
 
+import com.ink.auth.UserLogIn;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 
