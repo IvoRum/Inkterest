@@ -2,9 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="DB-233.14015.137">
     <data-source name="ink-security" uuid="175648db-4850-4284-83f0-3687a4e2bee6">
-      <database-info product="Redis Standalone" version="7.2.0" jdbc-version="4.2" driver-name="Redis JDBC Driver" driver-version="1.4" dbms="REDIS" exact-version="7.2.0" exact-driver-version="1.4">
-        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
-      </database-info>
+      <database-info product="Redis Standalone" version="7.2.0" jdbc-version="4.2" driver-name="Redis JDBC Driver" driver-version="1.4" dbms="REDIS" exact-version="7.2.0" exact-driver-version="1.4" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <user-name>default</user-name>
